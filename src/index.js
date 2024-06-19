@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { defineCustomElements } from 'stencil-component/loader';
+// Initialize the Stencil components
+defineCustomElements(window);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

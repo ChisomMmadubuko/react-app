@@ -1,0 +1,32 @@
+:host {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+:host(:hover) {
+  background-color: #0056b3;
+}
+
+:host(:active) {
+  animation: click-animation 0.2s ease;
+}
+
+/* Define the keyframes for the click animation */
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
